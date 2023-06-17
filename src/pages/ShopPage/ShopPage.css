@@ -1,0 +1,48 @@
+.shopPage{
+  background-color: white;
+  display: flex;
+  min-height: 91vh;
+  margin-top: 10px;
+}
+
+.shopPageUl{
+  width: 285px;
+  margin: 0px 0px 20px 10px;
+  background-color: lightgray;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+.ShopsList {
+  background-color: white;
+  padding: 15px 25px 15px 25px;
+  margin: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.shopTextName {
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 460px) {
+  .shopPageUl{
+    width: 25%;
+    margin: 0px 0px 0px 10px;
+  }
+  
+  .ShopsList {
+    text-align: center;
+    display: flex;
+    padding: 0;
+    margin: 10px 10px 0px 10px;
+  }
+
+  .shopTextName {
+    font-size: 14px;
+  }
+}

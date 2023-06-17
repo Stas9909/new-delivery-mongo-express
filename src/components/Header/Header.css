@@ -1,0 +1,42 @@
+header {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 71px;
+  width: 100%;
+  min-width: 340px;
+}
+
+.navBlockFirst {
+  width: 100px;
+  margin-left: 10px;
+  border-right: 5px solid white;
+  text-align: center;
+  padding: 10px; 
+  font-weight: bold;
+}
+
+.navBlockSecond {
+  width: 140px;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  position: relative;
+}
+
+.link.highlighted::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: -13px;
+  top: 0;
+  background-color: green;
+}

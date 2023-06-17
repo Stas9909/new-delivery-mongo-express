@@ -1,0 +1,327 @@
+.error-message {
+  padding-left: 20px;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.formContainer {
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.dataForSubmit {
+  display: flex;
+  gap: 10px;
+}
+
+.fieldsContainer {
+  width: 50%;
+  margin: 10px 0px 10px 10px;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.orderContainer {
+  background-color: lightgray;
+  width: 50%;
+  margin: 10px 10px 10px 0;
+  border-radius: 10px;
+}
+
+.field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 90px 30px 20px;
+  min-width: 182px;
+}
+
+.my-field {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.orederedDish {
+  display: flex;
+  margin: 10px 50px 10px 50px;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.divForImage {
+  border-radius: 10px 0 0 10px;
+  background-color: white;
+  width: 50%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dishImage {
+  width: 80%;
+  height: 90%;
+  border-radius: 10px;
+}
+
+.infoAndHandling {
+  background-color: white;
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 0 10px 10px 0;
+}
+
+.quantityField {
+  background-color: white;
+  width: 100%;
+  height: 28px;
+  text-align: center;
+  border: 1px solid rgb(222, 214, 64);
+}
+
+.currentInfo{
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listeners{
+  display: flex;
+  justify-content: center;
+}
+
+.counter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+  padding: 0px 5px;
+}
+
+.headerName{
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.foodPrice{
+  padding-top: 0;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.removeItem{
+  background-color: rgb(222, 214, 64);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.submitButton{
+  background-color: rgb(222, 214, 64);
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+  border-radius: 10px;
+}
+
+.submitTotalResult{
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  gap: 70px;
+}
+
+.quantityLowerField{
+  border-radius: 5px;
+  text-align: right;
+  background-color: white;
+  width: 100%;
+  height: 28px;
+}
+
+.modifiedItem{
+  width: 20px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(222, 214, 64);
+}
+
+.plus {
+  border-radius: 50% 0 0 0;
+}
+
+.minus {
+  border-radius: 0 0 0 50%;
+}
+
+.orderSuccess{
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .orederedDish {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .orederedDish {
+    height: 150px;
+  }
+
+  .divForImage {
+    width: 50%;
+    height: 150px;
+  }
+  
+  .infoAndHandling {
+    width: 50%;
+    height: 150px;
+  }
+
+  .headerName{
+    font-size: 12px;
+  }
+
+  .foodPrice{
+    font-size: 12px;
+  }
+
+  .field {
+    padding: 10px 10px 30px 10px;
+    min-width: 182px;
+  }
+}
+
+@media (max-width: 660px) {
+  .orederedDish {
+    height: 100px;
+  }
+
+  .divForImage {
+    width: 50%;
+    height: 100px;
+  }
+  
+  .infoAndHandling {
+    width: 50%;
+    height: 100px;
+  }
+
+  .currentInfo{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerName{
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .foodPrice{
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: bold;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .dataForSubmit {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .orderContainer {
+    width: 96%;
+    margin: 0 10px 10px 10px;
+  }
+
+  .fieldsContainer {
+    width: 96%;
+    margin: 10px 10px 0 10px;
+  }
+
+  .orederedDish {
+    height: 150px;
+  }
+
+  .divForImage {
+    width: 50%;
+    height: 150px;
+  }
+  
+  .infoAndHandling {
+    width: 50%;
+    height: 150px;
+  }
+
+  .currentInfo{
+    height: 50%;
+  }
+
+  .headerName{
+    font-size: 14px;
+  }
+
+  .foodPrice{
+    font-size: 14px;
+  }
+
+  .field {
+    padding: 10px 10px 10px 10px;
+    min-width: 182px;
+  }
+}
+
+@media (max-width: 420px) {
+  .submitTotalResult{
+    font-size: 15px;
+    gap: 50px;
+  }
+  
+  .quantityLowerField{
+    width: 100%;
+    height: 28px;
+  }
+
+  .submitButton{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+  }
+}
+
+

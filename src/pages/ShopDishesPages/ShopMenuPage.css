@@ -1,0 +1,22 @@
+.shopMenuPage{
+  width: 80%;
+  background-color: lightgray;
+  display: flex;
+  margin: 0px 20px 20px 20px; 
+  border-radius: 10px;
+}
+
+.shopMenuUl{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 460px) {
+  .shopMenuPage{
+    margin: 0px 0px 20px 10px; 
+  }
+}
+
+
+
