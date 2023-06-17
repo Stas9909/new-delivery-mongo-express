@@ -10,11 +10,11 @@ function App() {
     return (
         <>
             <Routes>
-                <Route path='/' element={<Wrapper />}>
-                    <Route path='/' element={<ShopPage />}>
-                        <Route path="shop/:id/" element={<ShopDishesPage />} />
+                <Route path='/new-delivery-mongo-express/' element={<Wrapper />}>
+                    <Route path='/new-delivery-mongo-express/' element={<ShopPage />}>
+                        <Route path="/new-delivery-mongo-express/shop/:id/" element={<ShopDishesPage />} />
                     </Route>
-                    <Route path='cart' element={<ShoppingCartPage />} />
+                    <Route path='/new-delivery-mongo-express/cart' element={<ShoppingCartPage />} />
                 </Route>
             </Routes>
         </>

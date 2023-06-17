@@ -17,6 +17,7 @@ let activeConnections = 0
 
 // Функция для получения имен коллекций
 async function getCollections(req, res) {
+  res.setHeader('Permissions-Policy', 'interest-cohort=()');
   const dbName = 'shop-goods';
   const db = client.db(dbName);
 
@@ -41,6 +42,7 @@ async function getCollections(req, res) {
 
 // Функция для получения данных выбранной коллекции
 async function getCollectionData(req, res) {
+  res.setHeader('Permissions-Policy', 'interest-cohort=()');
   const dbName = 'shop-goods';
   const db = client.db(dbName);
 
@@ -66,6 +68,7 @@ async function getCollectionData(req, res) {
 }
 
 async function saveOrder(req, res) {
+  res.setHeader('Permissions-Policy', 'interest-cohort=()');
   const { name, email, phone, address, items, totalAmount } = req.body;
   const dbName = 'saved-food-orders';
   const db = client.db(dbName);

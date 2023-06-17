@@ -20,7 +20,7 @@ const ShopPage = () => {
         <h4>Shops:</h4>
         {collections && collections.length > 0 && collections.map(collection => (
           <li className="ShopsList" key={collection}>
-            <NavLink className="link" to={`/shop/${collection}`}>
+            <NavLink className="link" to={`/new-delivery-mongo-express/shop/${collection}`}>
               <p className="shopTextName">{collection}</p>
             </NavLink>
           </li>
