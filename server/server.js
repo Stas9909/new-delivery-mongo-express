@@ -6,7 +6,8 @@ const server = express();
 server.use(cors());
 server.use(express.json());
 
-const url = 'mongodb+srv://stasprykhodko1:Hwsvg4KhDuJKOoKC@cluster0.rmymtql.mongodb.net/?retryWrites=true&w=majority'
+// const url = 'mongodb+srv://stasprykhodko1:Hwsvg4KhDuJKOoKC@cluster0.rmymtql.mongodb.net/?retryWrites=true&w=majority'
+const url = process.env.MONGO_URL
 
 const client = new MongoClient(url, {
   useNewUrlParser: true,
