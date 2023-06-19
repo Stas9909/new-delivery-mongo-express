@@ -199,7 +199,7 @@ const ShoppingCartPage = () => {
                     {cartData.map(item => (
                       <div className="orederedDish" key={item.id}>
                         <div className="divForImage">
-                          <img className="dishImage" src={item.image} alt={item.name} />
+                          <img className="dishImage" src={`/new-delivery-mongo-express/${item.image}`} alt={item.name} />
                         </div>
                         <div className="infoAndHandling">
                           <div className="currentInfo">
