@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/new-delivery-mongo-express/static/css/main.e904cea1.css",
-    "main.js": "/new-delivery-mongo-express/static/js/main.7e36f096.js",
+    "main.js": "/new-delivery-mongo-express/static/js/main.c8361cf7.js",
     "index.html": "/new-delivery-mongo-express/index.html",
     "main.e904cea1.css.map": "/new-delivery-mongo-express/static/css/main.e904cea1.css.map",
-    "main.7e36f096.js.map": "/new-delivery-mongo-express/static/js/main.7e36f096.js.map"
+    "main.c8361cf7.js.map": "/new-delivery-mongo-express/static/js/main.c8361cf7.js.map"
   },
   "entrypoints": [
     "static/css/main.e904cea1.css",
-    "static/js/main.7e36f096.js"
+    "static/js/main.c8361cf7.js"
   ]
 }
