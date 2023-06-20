@@ -18,8 +18,8 @@ const ShopMenuPage = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(`http://localhost:5000/server/collections/${params.id}`)
-    // fetch(`https://new-delivery-mongo-express.onrender.com/server/collections/${params.id}`)
+    // fetch(`http://localhost:5000/server/collections/${params.id}`)
+    fetch(`https://new-delivery-npmmongo-express.onrender.com/server/collections/${params.id}`)
       .then(res => res.json())
       .then(data => {
         setData(data);

@@ -6,8 +6,8 @@ const server = express();
 server.use(cors());
 server.use(express.json());
 
-const url = process.env.MONGO_URL || 'mongodb+srv://stasprgiykhodko1:Hwsvg4KhDuJKOoKC@cluster0.rmymtql.mongodb.net/?retryWrites=true&w=majority'
-// const url = process.env.MONGO_URL
+// const url = process.env.MONGO_URL || 'mongodb+srv://stasprgiykhodko1:Hwsvg4KhDuJKOoKC@cluster0.rmymtql.mongodb.net/?retryWrites=true&w=majority'
+const url = 'mongodb+srv://stasprykhodko1:Hwsvg4KhDuJKOoKC@cluster0.rmymtql.mongodb.net/?retryWrites=true&w=majority'
 
 const client = new MongoClient(url, {
   useNewUrlParser: true,
@@ -24,14 +24,17 @@ async function getCollections(req, res) {
 
   try {
     activeConnections++
-    await client.connect();
+    client.connect();
+    console.log(123321)
     const collections = await db
       .listCollections()
       .toArray();
     const collectionNames = collections.map(collection => collection.name);
+    console.log(collections)
     res.status(200).json(collectionNames);
   } catch (error) {
     res.status(500).json({ message: 'Could not get collection names' });
+    console.error(error)
   }
   finally {
     activeConnections--
@@ -107,7 +110,7 @@ server.get('/server/collections/:collectionName', getCollectionData);
 
 server.post('/server/save-order', saveOrder);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 
 
