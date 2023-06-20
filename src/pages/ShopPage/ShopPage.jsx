@@ -6,7 +6,8 @@ const ShopPage = () => {
   const [collections, setCollections] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/server/collections')
+    // fetch('http://localhost:5000/server/collections')
+    fetch('https://new-delivery-mongo-express.onrender.com/server/collections')
       .then(res => res.json())
       .then(data => {
         setCollections(data);

@@ -6,7 +6,7 @@ const server = express();
 server.use(cors());
 server.use(express.json());
 
-const url = 'mongodb+srv://stasprykhodko1:Hwsvg4KhDuJKOoKC@cluster0.rmymtql.mongodb.net/?retryWrites=true&w=majority'
+const url = process.env.MONGO_URL || 'mongodb+srv://stasprgiykhodko1:Hwsvg4KhDuJKOoKC@cluster0.rmymtql.mongodb.net/?retryWrites=true&w=majority'
 // const url = process.env.MONGO_URL
 
 const client = new MongoClient(url, {
@@ -109,7 +109,6 @@ server.post('/server/save-order', saveOrder);
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
-
 
 
 
