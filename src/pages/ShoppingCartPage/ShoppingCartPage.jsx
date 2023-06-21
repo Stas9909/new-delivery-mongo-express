@@ -84,8 +84,8 @@ const ShoppingCartPage = () => {
       items: cartData,
       totalAmount
     }
-
-    axios.post('http://localhost:5000/server/save-order', orderData, {
+    // axios.post('http://localhost:5000/server/save-order', orderData, {
+      axios.post('https://new-delivery-mongo-express.onrender.com/server/save-order', orderData, {
       headers: {
         'Content-Type': 'application/json',
       }
